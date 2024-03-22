@@ -1,0 +1,291 @@
+.App {
+  background-image: url('./backgroundImages/HomePage.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black; 
+  height: 100vh;
+  margin: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 80vh; 
+  flex-direction: column; 
+}
+
+.CharacterCreation {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./backgroundImages/CreationBackground.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.slideshow-container {
+  margin-top: none;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 600px; 
+  padding: 0 20px; 
+}
+
+.mySlides_fade {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.prev, .next {
+  font-size: 4em;
+  width: 75px; 
+  height: 75px; 
+  cursor: pointer; 
+  background: none;
+  border: none; 
+}
+
+.backToNav, .backToCharCreation, .backToCarSelection, #displayBack {
+  width: 100px;
+  padding: 5px;
+  margin: 2%;
+  background-color: rgb(255, 21, 0);
+} 
+
+#displayChar {
+  width: auto;
+  height: 200px;
+}
+
+#displayCar {
+  width: auto;
+  height: 125px;
+}
+
+.displayCharBox {
+  margin-bottom: 50px;
+  padding-bottom: 50px ;
+  border-bottom: 4px solid aliceblue;
+}
+
+.toCar, .toName, .submitChar {
+  width: 200px;
+  padding: 5px;
+  margin: 2%;
+  background-color: rgb(4, 202, 4);
+}
+
+.creationNavButtons, .carNavButtons, .finalButtons {
+  margin-top: none;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 600px; 
+  padding: 0 20px; 
+}
+
+.CharactersDisplay {
+  background-image: url('./backgroundImages/CharactersBackground.jpg');
+  background-size: cover; /* This will make sure the background covers the entire element */
+  background-position: center center;
+  background-repeat: no-repeat; /* This ensures the image does not repeat */
+  background-color: black; /* Provides a fallback color */
+  height: auto;
+  margin: 0;
+  display: flex;
+  min-height: 100vh; /* Ensures the element has a minimum height, making the background cover the page when empty */
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1 {
+  margin-bottom: 5%;
+  font-family: "Audiowide", sans-serif;
+  font-size: 3em;
+  text-shadow: 3px 5px 3px blue;
+  text-align: center;
+  color: rgba(243, 111, 50, 0.97);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 3em;
+  text-shadow: 3px 5px 3px rgb(14, 190, 111);
+  text-align: center;
+  color: rgba(73, 86, 227, 0.97);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.5em;
+  text-shadow: 3px 5px 3px rgb(0, 0, 0);
+  text-align: center;
+  color: rgba(14, 28, 179, 0.97);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+blockquote{
+  color: rgb(242, 255, 0);
+  font-size: 1.5em;
+  max-width: 100vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 3px 5px 3px rgb(0, 0, 0);
+}
+
+
+
+form {
+  padding: 20px 0;
+  position: relative;
+}
+
+form input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(0, 229, 255, 0.392);
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+button {
+  appearance: none;
+  outline: 0;
+  background-color: rgb(234, 87, 14);
+  border: 1px;
+  border-style: outset;
+  padding: 10px 15px;
+  color: #fffffff8;
+  border-radius: 3px;
+  width: 283px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.navigationButtons {
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer;
+  margin-bottom: 4%;
+}
+
+#AccountButton {
+  background-color: rgb(10, 176, 10);
+}
+
+a {
+  appearance: none;
+  outline: 0;
+  border: 1px;
+  border-style: outset;
+  padding: 10px 15px;
+  color: #fffffff8;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+#characters, .toDisplay {
+  margin-bottom: none;
+  padding: none;
+  margin: none;
+  width: 175px;
+  margin-right: 100px;
+  background-color: rgb(32, 32, 227);
+}
+
+.characterSaved {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+input::placeholder {
+  color: #33c80ad2; /* Placeholder text color */
+}
+
+textarea::placeholder {
+  color: #909090; /* Placeholder text color */
+}
+
+#newChar {
+  width: 175px;
+  background-color: rgb(39, 183, 26)
+}
+
+#logout {
+  width: 150px;
+  background-color: rgb(255, 0, 0);
+  margin-right: 100px;
+}
+
+.CharacterName {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+#nameForm {
+  margin-bottom: 50%;
+}
+
+
+p {
+  color:rgb(255, 255, 255);
+  size: 1.5em;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
